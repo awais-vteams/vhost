@@ -18,8 +18,8 @@ VHOST=$(cat <<EOF
     DocumentRoot ${PATHDIR}
     ServerAlias www.${NAME}
 
-    ErrorLog /var/log/apache2/${NAME}-error_log
-    CustomLog /var/log/apache2/${NAME}-access_log combined
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
 EOF
 )
