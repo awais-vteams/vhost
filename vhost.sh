@@ -19,7 +19,7 @@ VHOST=$(cat <<EOF
     ServerAlias www.${NAME}
 
     ErrorLog ${APACHE_LOG_DIR}/error.log
-	CustomLog ${APACHE_LOG_DIR}/access.log combined
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
 EOF
 )
