@@ -6,7 +6,7 @@ Create virtual host with single command on Ubuntu.
 
 Required `sudo` to run
 ```
-vhost.sh {name} {path_dir}
+sudo sh vhost.sh {name} {path_dir}
 
-vhost.sh example.com /var/www/html/example
+sudo sh vhost.sh example.com /var/www/html/example
 ```
